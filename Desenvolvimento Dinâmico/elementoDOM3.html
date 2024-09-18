@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 3</title>
+</head>
+<body>
+     <!--Chama a Função Confirma() ao clickar no botão-->
+    <button onclick="confirma()">Excluir Item</button.onclick>
+    <script>
+        //chama a função confirma() ao carregar a página 
+        function confirma(){
+            
+            let confirmação = confirm('Você deseja excluir esse item?')
+
+            if(confirmação){
+                alert('Item Excluído')
+            }else{
+                alert('Item não excluído')
+            }
+            
+        }
+    </script>
+</body>
+</html>

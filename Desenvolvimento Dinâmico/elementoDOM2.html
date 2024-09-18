@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 2</title>
+</head>
+<body>
+    <script>
+        /*#1 Peça para o usuário digitar um número.
+        Guarde esse número em uma variável.*/
+        var num1 = Number.parseInt(window.prompt('Digite um número'))
+
+        /*#2 Peça para o usuário digitar outro número.
+        Guarde esse número em uma variável.*/
+        var num2 = Number.parseInt(window.prompt('Digite outro número'))
+        
+        /*Agora, faça a soma desses dois números e
+        apresente em uma janela de alerta.*/
+        var soma = num1 + num2;
+        window.alert('O Resultado é : ' + soma + '.')
+        /*Crie um prompt informando "Digite seu nome: "
+        Guarde esse nome em uma variável só que em caixa alta.*/
+        var nome = window.prompt('Digite seu nome:')
+
+        /*Crie outro prompt informando "Digite seu sobrenome: "
+        Guarde o sobrenome em uma variável só que em caixa alta.*/
+        var sobrenome = window.prompt('Digite seu sobrenome:')
+
+        /*Depois apresente o nome e sobrenome digitado 
+        em uma janela de alerta.*/
+        window.alert('Seu nome é: ' + nome.toLocaleUpperCase() +' '+ sobrenome.toLocaleUpperCase() + '.')
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagem</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Reserva de Viagem</legend>
+                <fieldset><label>Nome:</label><br>
+                <input type="text" name="Nome"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" required name="Email"><br>
+            </fieldset><br>
+            <fieldset>
+                <label>Serviços Desejados:</label><br>
+                <input type="checkbox" name="Passagens" value="Passagens">Compra de passagens<br>
+                <input type="checkbox" name="Hospedagem" value="Hospedagem">Reserva de hospedagem<br>
+                <input type="checkbox" name="Veículo" value="Veículo">Reserva de veículos<br>
+            </fieldset><br>  
+            <fieldset>
+                <label>Forma de Pagamento</label><br>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito<br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto">Boleto<br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="PIX">PIX<br>
+                </label><br>
+
+            <label>Prazo de Pagamento</label><br>
+                <select name="prazoPagamento">
+                    <option value="aVista">À Vista</option> 
+                    <option value="5x">5 x sem juros</option> 
+                    <option value="10x" selected>10 x com juros</option> 
+                </select>
+            </fieldset><br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

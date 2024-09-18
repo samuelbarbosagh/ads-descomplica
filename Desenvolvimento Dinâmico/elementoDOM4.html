@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrando Elementos DOM</title>
+</head>
+<body>
+    <h1>Usando o Seletor do DOM</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>NodeJS</li>
+    </ul>
+
+    <div id="conteudo"  name = 'divconteudo' class="mensagem">
+    </div>
+
+    <div  name = 'divconteudo' class = 'mensagem'>
+    </div>
+
+    <div  name = 'divconteudo' class = 'mensagem'>
+    </div>
+    <span id = 'novospan' classe ='novo'>
+        Texto novo
+    </span>
+</body>
+<script>
+    //Alterando estilos de elementos em array usando seletores
+    elemento0 = document.getElementsByTagName('li')[0];
+    elemento0.style.color = 'red'
+    elemento1 = document.getElementsByTagName('li')[1];
+    elemento1.style.background = 'red'
+    elemento2 = document.getElementsByTagName('li')[2];
+    elemento2.innerText = "SpringBoot"
+   
+    // Selecionando um elemento único pelo id
+    elementoDiv = document.getElementById('conteudo');
+    //mudando a cor do background
+    elementoDiv.style.backgroundColor = 'yellow'
+    // Alterando o texto do elemento
+    elementoDiv.innerHTML = "<p>estou colocando texto dentro da DIV 0</p>"
+    // Selecionando um elemento pelo nome
+    elementoDivname = document.getElementsByName('divconteudo')[1];
+    //alterando a cor do elemento
+    elementoDivname.style.color = 'navy'
+    //mudando a cor do background
+    elementoDivname.style.backgroundColor = 'pink'
+    //colocando texto no elemento
+    elementoDivname.innerText = 'estou colocando texto dentro da DIV 1'
+    // Selecionando um elemento pelo class
+    elementoDivClass = document.getElementsByClassName('mensagem')[2];
+    elementoDivClass.innerHTML = '<p>estou colocando texto dentro da DIV 2</p>'
+     //mudando a cor do background
+    elementoDivClass.style.backgroundColor = 'purple'
+    // Selecionando um elemento span pela classe pelo querySelector
+    elementoSpanClass = document.querySelector('span.novo');
+    elementoSpanClass.style.color='red'
+    //mudando o background do elemento
+    
+    //Selecionando um elemento e mudando o texto do elemento span pelo nome pelo querySelector
+    //elementoSpanClass = document.querySelector("#novospan");
+   // elementoSpanClass.innerText='Texto novo mudado pela classe'
+   
+
+
+
+</script>
+</html>

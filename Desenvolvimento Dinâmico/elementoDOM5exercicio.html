@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 5 EXERCÍCIO</title>
+</head>
+<body>
+    <div class = 'estilo'>
+        div com estilo
+    </div>
+    <div class = 'estilo'>
+        div com estilo 2
+    </div>
+    <p class='estilo'>Elemento p com estilo</p>
+    <p>Isso é <span class = 'estilo'>elemento span</span>dentro de um p</p>
+</body>
+<script>
+    /*Coloque todos os elementos que tem a class estilo com fundo azul,
+    letra branca e todas as letras em maiúscula*/
+    const listaEstilo = document.querySelectorAll(".estilo");
+    for (i=0;i<listaEstilo.length;i++) {
+        listaEstilo[i].style.backgroundColor ='blue'
+        listaEstilo[i].style.color = 'white'
+        listaEstilo[i].innerText = listaEstilo[i].innerText.toUpperCase();
+    }
+
+
+
+    //PRATICAR BASTANTE ESSE EXERCÍCIO!!!!!!!
+
+    
+</script>
+</html>
